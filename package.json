@@ -1,0 +1,17 @@
+{
+  "name": "reservasi-from",
+  "version": "1.0.0",
+  "description": "BCA reservation form with Vercel Speed Insights",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server",
+    "build": "echo 'Static HTML project - no build needed'",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12"
+  }
+}
